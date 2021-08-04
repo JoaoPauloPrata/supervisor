@@ -8,7 +8,7 @@
  */
 class Item
 {
-    Q_OBJECT
+    // Q_OBJECT
 public:
     /**
      * @brief ~Item
