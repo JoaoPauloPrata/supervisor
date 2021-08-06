@@ -1,14 +1,12 @@
 #ifndef ITEM_H
 #define ITEM_H
 
-#include <QWidget>
 #include <string>
 
 using namespace std;
 
 class Item
 {
-    // Q_OBJECT
 public:
     virtual ~Item(){};
 

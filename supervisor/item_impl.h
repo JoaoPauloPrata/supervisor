@@ -1,16 +1,12 @@
 #ifndef ITEM_IMPL_H
 #define ITEM_IMPL_H
 
-#include <QWidget>
-
 #include "./item.h"
 
 using namespace std;
 
 class ItemImpl : public Item
 {
-    Q_OBJECT
-
 protected:
     string id;
     string name;
