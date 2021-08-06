@@ -11,11 +11,15 @@ CONFIG += c++11
 SOURCES += \
     item.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    user.cpp \
+    userimpl.cpp
 
 HEADERS += \
     item.h \
-    mainwindow.h
+    mainwindow.h \
+    user.h \
+    userimpl.h
 
 FORMS += \
     mainwindow.ui

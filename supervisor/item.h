@@ -8,7 +8,7 @@ using namespace std;
 
 class Item
 {
-    Q_OBJECT
+    // Q_OBJECT
 public:
     virtual ~Item(){};
 
