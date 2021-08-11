@@ -12,3 +12,18 @@ HomePage_Employee::~HomePage_Employee()
 {
     delete ui;
 }
+
+void HomePage_Employee::on_pushButton_notas_fiscais_clicked()
+{
+    Receipt *dialog = new Receipt(this);
+    // hide();
+    dialog->show();
+}
+
+void HomePage_Employee::on_pushButton_gerar_relatorio_clicked()
+{
+    Report *dialog = new Report(this);
+    // hide();
+    dialog->show();
+}
+

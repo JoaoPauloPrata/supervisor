@@ -20,6 +20,9 @@ void MainWindow::on_button_login_clicked()
     QString username = ui->lineEdit_user->text();
     QString password = ui->lienEdit_password->text();
 
+    // int log = login(username, password);
+    // if(log) dialog->show();
+
     if(username == "user" && password == "pass") {
         QMessageBox::information(this, "Login", "Login feito com sucesso!");
         hide();
