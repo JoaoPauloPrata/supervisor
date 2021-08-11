@@ -9,23 +9,38 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    actionreceipt.cpp \
+    addpurchaseditem.cpp \
+    deletepurchaseditem.cpp \
     homepage_employee.cpp \
     item.cpp \
     main.cpp \
     mainwindow.cpp \
+    receipt.cpp \
+    report.cpp \
     user.cpp \
     userimpl.cpp
 
 HEADERS += \
+    actionreceipt.h \
+    addpurchaseditem.h \
+    deletepurchaseditem.h \
     homepage_employee.h \
     item.h \
     mainwindow.h \
+    receipt.h \
+    report.h \
     user.h \
     userimpl.h
 
 FORMS += \
+    actionreceipt.ui \
+    addpurchaseditem.ui \
+    deletepurchaseditem.ui \
     homepage_employee.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    receipt.ui \
+    report.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
