@@ -9,6 +9,7 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    homepage_employee.cpp \
     item.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -16,12 +17,14 @@ SOURCES += \
     userimpl.cpp
 
 HEADERS += \
+    homepage_employee.h \
     item.h \
     mainwindow.h \
     user.h \
     userimpl.h
 
 FORMS += \
+    homepage_employee.ui \
     mainwindow.ui
 
 # Default rules for deployment.

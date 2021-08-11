@@ -1,5 +1,5 @@
 #include "userimpl.h"
-
+/*
 UserImpl::UserImpl()
 {
     username = "username";
@@ -42,3 +42,4 @@ void UserImpl::setId(const int i)
 {
     id = i;
 }
+*/
