@@ -7,6 +7,8 @@ debug/item.o
 debug/main.o
 debug/mainwindow.o
 debug/receipt.o
+debug/receiptimpl.o
+debug/receiptpage.o
 debug/report.o
 debug/user.o
 debug/userimpl.o
@@ -15,5 +17,5 @@ debug/moc_addpurchaseditem.o
 debug/moc_deletepurchaseditem.o
 debug/moc_homepage_employee.o
 debug/moc_mainwindow.o
-debug/moc_receipt.o
+debug/moc_receiptpage.o
 debug/moc_report.o

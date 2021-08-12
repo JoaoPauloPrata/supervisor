@@ -3,6 +3,7 @@
 
 #include <list>
 #include "userimpl.h"
+#include "receiptimpl.h"
 
 /**
  * @brief The App class
@@ -40,6 +41,13 @@ public:
      void addUser(User *u) {
          user_list.push_back(u);
      }
+     /**
+      * @brief addReceipt
+      * @param r
+      */
+     void addReceipt(Receipt *r) {
+         receipt_list.push_back(r);
+     }
 private:
     /**
      * @brief App
@@ -58,7 +66,7 @@ private:
     /**
      * @brief ~App
      */
-    virtual ~App();
+    virtual ~App() {};
     /**
      * @brief operator =
      */
@@ -67,6 +75,10 @@ private:
      * @brief user_list
      */
     std::list<User*> user_list;
+    /**
+     * @brief receipt_list
+     */
+    std::list<Receipt*> receipt_list;
 };
 
 #endif // APP_H
