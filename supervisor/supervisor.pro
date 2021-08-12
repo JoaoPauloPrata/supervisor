@@ -18,6 +18,8 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     receipt.cpp \
+    receiptimpl.cpp \
+    receiptpage.cpp \
     report.cpp \
     user.cpp \
     userimpl.cpp
@@ -31,6 +33,8 @@ HEADERS += \
     item.h \
     mainwindow.h \
     receipt.h \
+    receiptimpl.h \
+    receiptpage.h \
     report.h \
     user.h \
     userimpl.h
@@ -41,7 +45,7 @@ FORMS += \
     deletepurchaseditem.ui \
     homepage_employee.ui \
     mainwindow.ui \
-    receipt.ui \
+    receiptpage.ui \
     report.ui
 
 # Default rules for deployment.

@@ -7,6 +7,8 @@ release/item.o
 release/main.o
 release/mainwindow.o
 release/receipt.o
+release/receiptimpl.o
+release/receiptpage.o
 release/report.o
 release/user.o
 release/userimpl.o
@@ -15,5 +17,5 @@ release/moc_addpurchaseditem.o
 release/moc_deletepurchaseditem.o
 release/moc_homepage_employee.o
 release/moc_mainwindow.o
-release/moc_receipt.o
+release/moc_receiptpage.o
 release/moc_report.o

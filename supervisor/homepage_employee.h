@@ -3,7 +3,7 @@
 
 #include <QDialog>
 
-#include "receipt.h"
+#include "receiptpage.h"
 #include "report.h"
 
 namespace Ui {
@@ -25,7 +25,7 @@ private slots:
 
 private:
     Ui::HomePage_Employee *ui;
-    Receipt *rc;
+    ReceiptPage *rc;
     Report *rp;
 };
 

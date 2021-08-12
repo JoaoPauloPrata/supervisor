@@ -2,6 +2,7 @@
 #define ADDPURCHASEDITEM_H
 
 #include <QDialog>
+#include "app.h"
 
 namespace Ui {
 class AddPurchasedItem;
