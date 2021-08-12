@@ -1,5 +1,6 @@
 debug/actionreceipt.o
 debug/addpurchaseditem.o
+debug/app.o
 debug/deletepurchaseditem.o
 debug/homepage_employee.o
 debug/item.o

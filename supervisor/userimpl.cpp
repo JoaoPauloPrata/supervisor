@@ -1,5 +1,5 @@
 #include "userimpl.h"
-/*
+
 UserImpl::UserImpl()
 {
     username = "username";
@@ -7,7 +7,7 @@ UserImpl::UserImpl()
     int i = id_counter();
     id = i;
 }
-UserImpl::UserImpl(const std::string u, std::string p)
+UserImpl::UserImpl(const std::string u, const std::string p)
 {
     username = u;
     password = p;
@@ -42,4 +42,4 @@ void UserImpl::setId(const int i)
 {
     id = i;
 }
-*/
+
