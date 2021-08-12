@@ -1,5 +1,6 @@
 release/actionreceipt.o
 release/addpurchaseditem.o
+release/app.o
 release/deletepurchaseditem.o
 release/homepage_employee.o
 release/item.o

@@ -30,7 +30,7 @@ public:
     /**
      * @brief UserImpl constructor
      */
-    UserImpl(const std::string, std::string);
+    UserImpl(const std::string, const std::string);
     /**
      * @brief ~UserImpl destructor
      */
