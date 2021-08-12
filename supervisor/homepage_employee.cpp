@@ -15,7 +15,11 @@ HomePage_Employee::~HomePage_Employee()
 
 void HomePage_Employee::on_pushButton_notas_fiscais_clicked()
 {
-    ReceiptPage *dialog = new ReceiptPage(this);
+    // ReceiptPage *dialog = new ReceiptPage(this);
+    // hide();
+    // dialog->show();
+
+    ActionReceipt *dialog = new ActionReceipt(this);
     // hide();
     dialog->show();
 }

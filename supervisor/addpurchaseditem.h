@@ -1,8 +1,13 @@
+/**
+ * @file addpurchaseditem.h
+ */
 #ifndef ADDPURCHASEDITEM_H
 #define ADDPURCHASEDITEM_H
 
 #include <QDialog>
+
 #include "app.h"
+#include "purchaseimpl.h"
 
 namespace Ui {
 class AddPurchasedItem;

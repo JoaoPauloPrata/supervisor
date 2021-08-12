@@ -1,8 +1,12 @@
+/**
+ * @file homepage_employee.h
+ */
 #ifndef HOMEPAGE_EMPLOYEE_H
 #define HOMEPAGE_EMPLOYEE_H
 
 #include <QDialog>
 
+#include "actionreceipt.h"
 #include "receiptpage.h"
 #include "report.h"
 
@@ -27,6 +31,7 @@ private:
     Ui::HomePage_Employee *ui;
     ReceiptPage *rc;
     Report *rp;
+    ActionReceipt *ac;
 };
 
 #endif // HOMEPAGE_EMPLOYEE_H

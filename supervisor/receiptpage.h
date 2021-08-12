@@ -1,3 +1,6 @@
+/**
+ * @file receiptpage.h
+ */
 #ifndef RECEIPTPAGE_H
 #define RECEIPTPAGE_H
 

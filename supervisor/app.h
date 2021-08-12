@@ -1,10 +1,14 @@
+/**
+ * @file app.h
+ */
 #ifndef APP_H
 #define APP_H
-
+/// @cond
 #include <list>
-#include "userimpl.h"
-#include "receiptimpl.h"
-
+/// @endcond
+#include "user.h"
+#include "receipt.h"
+#include "purchase.h"
 /**
  * @brief The App class
  */
@@ -25,40 +29,22 @@ public:
      * @param p password
      * @return 0 for error and 1 for permission
      */
-      int login(std::string u, std::string p) {
-          if(user_list.size() == 0) return 0;
-          for(auto user : user_list) {
-              if(u == user->getUsername() && p == user->getPassword()) {
-                  return 1;
-              };
-          }
-          return 0;
-      }
+      int login(std::string u, std::string p);
      /**
       * @brief addUser
       * @param u User that will be added to the app.
       */
-     void addUser(User *u) {
-         user_list.push_back(u);
-     }
+     void addUser(User *u);
      /**
-      * @brief addReceipt
-      * @param r
+      * @brief addToReceipt
+      * @param p
       */
-     void addReceipt(Receipt *r) {
-         receipt_list.push_back(r);
-     }
+     void addToReceipt(Purchase *p);
 private:
     /**
      * @brief App
      */
-    App() {
-        User *user = new UserImpl("us", "pa");
-        addUser(user);
-
-        User *rafa = new UserImpl("rafa", "coelho");
-        addUser(rafa);
-    };
+    App();
     /**
      * @brief App
      */
@@ -78,7 +64,31 @@ private:
     /**
      * @brief receipt_list
      */
-    std::list<Receipt*> receipt_list;
+    Receipt *receipt;
 };
+
+/*! \mainpage Trabalho de Engenharia de Software
+*
+* \section Introdução
+*
+* Desenvolvimento de um Framework C++ para a Construção de Simulações Baseadas na Dinâmica de Sistemas.
+*
+* É um software para Desktops que permita gerenciar um caixa de um comércio juntamente das vendas realizadas.
+* É esperado que o software permita o cadastro e manipulação dos itens que são vendidos no comércio,
+* além dos funcionários e seus respectivos logins no sistema. Também deve ser possível gerar uma nota
+* fiscal a cada dia de serviço a qual deve conter o valor do caixa ao iniciar o dia, assim como os
+* itens vendidos com a hora e minuto da venda. O software também deve ser capaz de gerar um relatório
+* do dia, contendo o lucro, a data do relatório, o valor que o caixa foi iniciado e os itens vendidos
+* na mesma data. O sistema também deve privar algumas funcionalidades de acordo com o tipo de
+* acesso permitido ao usuário. Onde o administrador tem total acesso ao sistema e o funcionário
+* deve apenas adicionar ou remover um item vendido a uma nota fiscal do dia corrente, e gerar
+* relatórios da mesma.
+*
+* \author Grupo
+*/
+/* \section install_sec Installation
+*
+* \subsection step1 Step 1: Opening the box
+*/
 
 #endif // APP_H

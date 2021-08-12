@@ -1,3 +1,6 @@
+/**
+ * @file userimpl.h
+ */
 #ifndef USERIMPL_H
 #define USERIMPL_H
 

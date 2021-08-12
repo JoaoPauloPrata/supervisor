@@ -1,3 +1,6 @@
+/**
+ * @file deletepurchaseditem.h
+ */
 #ifndef DELETEPURCHASEDITEM_H
 #define DELETEPURCHASEDITEM_H
 

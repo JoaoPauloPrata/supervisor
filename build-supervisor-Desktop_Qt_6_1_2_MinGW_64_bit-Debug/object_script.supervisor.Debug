@@ -4,8 +4,11 @@ debug/app.o
 debug/deletepurchaseditem.o
 debug/homepage_employee.o
 debug/item.o
+debug/itemimpl.o
 debug/main.o
 debug/mainwindow.o
+debug/purchase.o
+debug/purchaseimpl.o
 debug/receipt.o
 debug/receiptimpl.o
 debug/receiptpage.o

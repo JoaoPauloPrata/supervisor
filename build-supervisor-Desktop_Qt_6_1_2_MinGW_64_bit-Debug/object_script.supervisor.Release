@@ -4,8 +4,11 @@ release/app.o
 release/deletepurchaseditem.o
 release/homepage_employee.o
 release/item.o
+release/itemimpl.o
 release/main.o
 release/mainwindow.o
+release/purchase.o
+release/purchaseimpl.o
 release/receipt.o
 release/receiptimpl.o
 release/receiptpage.o
