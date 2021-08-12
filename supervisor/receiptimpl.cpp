@@ -1,9 +1,6 @@
 #include "receiptimpl.h"
 
-ReceiptImpl::ReceiptImpl()
-{
-
-}
+ReceiptImpl::ReceiptImpl() {}
 
 ReceiptImpl::ReceiptImpl(std::string d, double i, double f) {
     date = d;
@@ -15,7 +12,7 @@ std::string ReceiptImpl::getDate() const {
     return date;
 }
 
-void ReceiptImpl::setData(const std::string d) {
+void ReceiptImpl::setData(std::string d) {
     date = d;
 }
 
@@ -23,7 +20,7 @@ double ReceiptImpl::getInitialValue() const {
     return initial_value;
 }
 
-void ReceiptImpl::setInitialValue(const double i) {
+void ReceiptImpl::setInitialValue(double i) {
     initial_value = i;
 }
 
@@ -31,10 +28,10 @@ double ReceiptImpl::getFinalValue() const {
     return final_value;
 }
 
-void ReceiptImpl::setFinalValue(const double f) {
+void ReceiptImpl::setFinalValue(double f) {
     final_value = f;
 }
 
-void ReceiptImpl::add(SoldItem *s) {
-    items_list.push_back(s);
+void ReceiptImpl::add(Purchase *p) {
+    items_list.push_back(p);
 }

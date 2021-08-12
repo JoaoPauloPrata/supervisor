@@ -1,3 +1,6 @@
+/**
+ * @file receiptimpl.h
+ */
 #ifndef RECEIPTIMPL_H
 #define RECEIPTIMPL_H
 
@@ -16,7 +19,7 @@ private:
     /**
      * @brief items_list
      */
-    std::list<SoldItem*> items_list;
+    std::list<Purchase*> items_list;
     /**
      * @brief initial_value
      */
@@ -50,7 +53,7 @@ public:
      * @brief setData
      * @param d Date of the receipt
      */
-    virtual void setData(const std::string d);
+    virtual void setData(std::string d);
     /**
      * @brief getInitialValue
      * @return Initial value of that day
@@ -60,7 +63,7 @@ public:
      * @brief setInitialValue
      * @param i Initial value
      */
-    virtual void setInitialValue(const double i);
+    virtual void setInitialValue(double i);
     /**
      * @brief getFinalValue
      * @return Final value of that day
@@ -70,12 +73,12 @@ public:
      * @brief setFinalValue
      * @param f Final value
      */
-    virtual void setFinalValue(const double f);
+    virtual void setFinalValue(double f);
     /**
      * @brief add
      * @param s
      */
-    virtual void add(SoldItem *s);
+    virtual void add(Purchase *p);
 };
 
 #endif // RECEIPTIMPL_H

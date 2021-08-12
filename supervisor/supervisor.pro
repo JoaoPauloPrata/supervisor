@@ -15,8 +15,11 @@ SOURCES += \
     deletepurchaseditem.cpp \
     homepage_employee.cpp \
     item.cpp \
+    itemimpl.cpp \
     main.cpp \
     mainwindow.cpp \
+    purchase.cpp \
+    purchaseimpl.cpp \
     receipt.cpp \
     receiptimpl.cpp \
     receiptpage.cpp \
@@ -31,7 +34,10 @@ HEADERS += \
     deletepurchaseditem.h \
     homepage_employee.h \
     item.h \
+    itemimpl.h \
     mainwindow.h \
+    purchase.h \
+    purchaseimpl.h \
     receipt.h \
     receiptimpl.h \
     receiptpage.h \

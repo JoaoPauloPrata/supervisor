@@ -1,3 +1,6 @@
+/**
+ * @file actionreceipt.h
+ */
 #ifndef ACTIONRECEIPT_H
 #define ACTIONRECEIPT_H
 

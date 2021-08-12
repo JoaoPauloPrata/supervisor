@@ -1,11 +1,13 @@
+/**
+ * @file receipt.h
+ */
 #ifndef RECEIPT_H
 #define RECEIPT_H
-
+/// @cond
 #include <string>
 #include <list>
-
-class SoldItem;
-
+/// @endcond
+#include "purchase.h"
 /**
  * @brief The Receipt class
  */
@@ -25,7 +27,7 @@ public:
      * @brief setData
      * @param d
      */
-    virtual void setData(const std::string d) = 0;
+    virtual void setData(std::string d) = 0;
     /**
      * @brief getInitialValue
      * @return
@@ -35,7 +37,7 @@ public:
      * @brief setInitialValue
      * @param i
      */
-    virtual void setInitialValue(const double i) = 0;
+    virtual void setInitialValue(double i) = 0;
     /**
      * @brief getFinalValue
      * @return
@@ -45,12 +47,12 @@ public:
      * @brief setFinalValue
      * @param f
      */
-    virtual void setFinalValue(const double f) = 0;
+    virtual void setFinalValue(double f) = 0;
     /**
      * @brief add
      * @param s
      */
-    virtual void add(SoldItem *s) = 0;
+    virtual void add(Purchase *p) = 0;
 };
 
 #endif // RECEIPT_H

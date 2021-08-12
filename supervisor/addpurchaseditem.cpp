@@ -1,6 +1,8 @@
 #include "addpurchaseditem.h"
 #include "ui_addpurchaseditem.h"
 
+#include "itemimpl.h"
+
 AddPurchasedItem::AddPurchasedItem(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AddPurchasedItem)
@@ -20,7 +22,10 @@ void AddPurchasedItem::on_pushButton_confirm_clicked()
     int quantity = ui->spinBox_quantity->value();
     QString time = ui->lineEdit_time->text();
 
-    // SoldItem *i = new SoldItem(name, price, quantity, time);
-    // nota_fiscal.add(i);
+    Item *i = new ItemImpl("1", name.toStdString(), price);
+
+    Purchase *p = new PurchaseImpl(i, quantity, time.toStdString());
+
+    // App::getInstance().addToReceipt(p);
 }
 
