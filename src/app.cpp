@@ -2,11 +2,8 @@
 #include "userimpl.h"
 
 App::App() {
-    User *user = new UserImpl("us", "pa");
+    User *user = new UserImpl("admin", "admin");
     addUser(user);
-
-    User *rafa = new UserImpl("rafa", "coelho");
-    addUser(rafa);
 };
 
 App& App::getInstance() {
