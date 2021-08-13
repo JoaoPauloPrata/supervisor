@@ -8,7 +8,6 @@
 /// @endcond
 #include "user.h"
 #include "receipt.h"
-#include "purchase.h"
 /**
  * @brief The App class
  */
