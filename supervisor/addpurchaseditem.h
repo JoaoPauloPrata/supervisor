@@ -6,7 +6,8 @@
 
 #include <QDialog>
 
-#include "app.h"
+// #include "app.h"
+#include "../src/lib/app.h"
 #include "purchaseimpl.h"
 
 namespace Ui {
