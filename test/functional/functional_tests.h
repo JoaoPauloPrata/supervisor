@@ -4,10 +4,6 @@
 #ifndef FUNCTIONAL_TESTS_H
 #define FUNCTIONAL_TESTS_H
 
-#include <assert.h>
-
-#include "../src/userimpl.h"
-
 void functionalTest();
 
 #endif
