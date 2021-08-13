@@ -7,7 +7,7 @@
 #include <QDialog>
 
 #include "actionreceipt.h"
-#include "receiptpage.h"
+// #include "receiptpage.h"
 #include "report.h"
 
 namespace Ui {

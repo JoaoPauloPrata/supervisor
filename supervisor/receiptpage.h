@@ -6,7 +6,7 @@
 
 #include <QDialog>
 
-#include "actionreceipt.h"
+// #include "actionreceipt.h"
 
 namespace Ui {
 class ReceiptPage;
@@ -25,7 +25,7 @@ private slots:
 
 private:
     Ui::ReceiptPage *ui;
-    ActionReceipt *ar;
+    // ActionReceipt *ar;
 };
 
 #endif // RECEIPTPAGE_H
