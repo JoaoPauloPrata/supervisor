@@ -1,0 +1,4 @@
+#ifndef MAIN_FUNCTIONAL_TESTS_H
+#define MAIN_FUNCTIONAL_TESTS_H
+
+#endif

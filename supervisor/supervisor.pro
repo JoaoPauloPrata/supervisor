@@ -11,39 +11,21 @@ CONFIG += c++11
 SOURCES += \
     actionreceipt.cpp \
     addpurchaseditem.cpp \
-    app.cpp \
     deletepurchaseditem.cpp \
     homepage_employee.cpp \
-    item.cpp \
-    itemimpl.cpp \
     main.cpp \
     mainwindow.cpp \
-    purchase.cpp \
-    purchaseimpl.cpp \
-    receipt.cpp \
-    receiptimpl.cpp \
     receiptpage.cpp \
     report.cpp \
-    user.cpp \
-    userimpl.cpp
 
 HEADERS += \
     actionreceipt.h \
     addpurchaseditem.h \
-    app.h \
     deletepurchaseditem.h \
     homepage_employee.h \
-    item.h \
-    itemimpl.h \
     mainwindow.h \
-    purchase.h \
-    purchaseimpl.h \
-    receipt.h \
-    receiptimpl.h \
     receiptpage.h \
     report.h \
-    user.h \
-    userimpl.h
 
 FORMS += \
     actionreceipt.ui \
