@@ -30,10 +30,13 @@ $(BIN_DIR)/unit_user.o: $(UNIT_DIR)/unit_user.$(EXT)
 $(BIN_DIR)/unit_app.o: $(UNIT_DIR)/unit_app.$(EXT)
 	$(CC) -c $(UNIT_DIR)/unit_app.$(EXT) -o $(BIN_DIR)/unit_app.o
 
-exec_dll:
-	$(CC) main.cpp -L$(BIN_DIR) $(LIB) $(OBJECTS) -o $(BIN_DIR)\$(EXE).exe
+run: exec_dll execute
 
-run: exec_dll
+exec_dll:
+	$(CC) ./test/unit/main.cpp -L$(BIN_DIR) $(LIB) $(OBJECTS) -o $(BIN_DIR)\$(EXE).exe
+
+execute: 
+	$(BIN_DIR)/$(EXE).exe
 
 clean:
-	rm -f bin/*.o bin/unit_tests bin/*.dll
+	rm -f bin/*.o bin/*.dll bin/*.exe
