@@ -39,4 +39,4 @@ execute:
 	$(BIN_DIR)/$(EXE).exe
 
 clean:
-	rm -f bin/*.o bin/*.dll bin/*.exe
+	
