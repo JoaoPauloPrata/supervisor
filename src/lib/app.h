@@ -1,65 +1,77 @@
 /**
  * @file app.h
  */
+
 #ifndef APP_H
 #define APP_H
-/// @cond
+
 #include <list>
-/// @endcond
-#include "user.h"
-#include "receipt.h"
+
+#include "./user.h"
+#include "./receipt.h"
+
 /**
  * @brief The App class
  */
-class App {
+class App
+{
 public:
-    /**
-     * @brief getInstance
-     * @return Same instance of App because of Singleton design pattern.
-     */
-    static App& getInstance();
-    /**
-     * @brief login
-     * @param u username
-     * @param p password
-     * @return 0 for error and 1 for permission
-     */
-    int login(std::string u, std::string p);
-    /**
-     * @brief addUser
-     * @param u User that will be added to the app.
-     */
-    void addUser(User *u);
-    /**
-     * @brief addToReceipt
-     * @param p
-     */
-    void addToReceipt(Purchase *p);
+  /**
+   * @brief getInstance
+   * @return Same instance of App because of Singleton design pattern.
+   */
+  static App &getInstance();
+
+  /**
+   * @brief login
+   * @param u username
+   * @param p password
+   * @return 0 for error and 1 for permission
+   */
+  int login(std::string u, std::string p);
+
+  /**
+   * @brief addUser
+   * @param u User that will be added to the app.
+   */
+  void addUser(User *u);
+
+  /**
+   * @brief addToReceipt
+   * @param p
+   */
+  void addToReceipt(Purchase *p);
+
 private:
-    /**
-     * @brief App
-     */
-    App();
-    /**
-     * @brief App
-     */
-    App(App const&);
-    /**
-     * @brief ~App
-     */
-    virtual ~App() {};
-    /**
-     * @brief operator =
-     */
-    void operator=(App const&);
-    /**
-     * @brief user_list
-     */
-    std::list<User*> user_list;
-    /**
-     * @brief receipt_list
-     */
-    Receipt *receipt;
+  /**
+   * @brief App
+   */
+  App();
+
+  /**
+   * @brief App
+   */
+  App(App const &);
+
+  /**
+   * @brief ~App
+   */
+  virtual ~App(){};
+
+  /**
+   * @brief operator =
+   */
+  void operator=(App const &);
+
+  /**
+   * @brief user_list
+   */
+  std::list<User *> user_list;
+
+  /**
+   * @brief receipt_list
+   */
+  Receipt *receipt;
 };
 
 /*! \mainpage Trabalho de Engenharia de Software

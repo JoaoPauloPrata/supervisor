@@ -6,8 +6,8 @@
 
 #include <assert.h>
 
-#include "../src/userimpl.h"
+#include "../../src/userimpl.h"
 
-void functionalTest();
+void run_functional_tests();
 
 #endif
