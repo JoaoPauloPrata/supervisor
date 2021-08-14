@@ -1,3 +1,3 @@
 #include "functional_tests.h"
 
-void functionalTest() {}
+void run_functional_tests(){};
