@@ -12,7 +12,7 @@
 void run_unit_tests_Item();
 
 void unit_Item_constructor();
-void unit_item_destructor();
+void unit_Item_destructor();
 void unit_Item_getId();
 void unit_Item_SetId();
 void unit_Item_getName();
