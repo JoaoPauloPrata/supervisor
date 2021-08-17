@@ -37,7 +37,7 @@ public:
      * @param name Name of the Item
      * @param price Price in R$
      */
-  ItemImpl(std::string id = "", std::string name = "", float price = 0.0);
+  ItemImpl(std::string id , std::string name , float price);
   /**
      * @brief ~Item
      */

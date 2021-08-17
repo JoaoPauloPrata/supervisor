@@ -2,7 +2,8 @@
 
 using namespace std;
 
-void unit_Receipt_constructor(){
+void unit_Receipt_constructor()
+{
     cout<< "RECEIPT CONSTRUCTOR TEST STARTING..."<<endl;
 
     Receipt *receipt = new ReceiptImpl();
@@ -17,7 +18,8 @@ void unit_Receipt_constructor(){
     cout <<"RECEIPT CONSTRUCTOR TEST ENDED"<<endl;
 };
 
-void unit_Receipt_destructor(){
+void unit_Receipt_destructor()
+{
     cout<<"RECEIPT DESTRUCTOR TEST STARTING..."<<endl;
 
     Receipt *r = new ReceiptImpl();
@@ -25,7 +27,8 @@ void unit_Receipt_destructor(){
     cout<<"RECEIPT DESCTRUCTOR TEST ENDED."<<endl;
 };
 
-void unit_Receipt_getDate(){
+void unit_Receipt_getDate()
+{
     cout<<"RECEIPT GET DATE TEST STARTING..."<<endl;
 
     Receipt *r = new ReceiptImpl("23/07/2000", 1.1, 2.1);
@@ -37,7 +40,8 @@ void unit_Receipt_getDate(){
     cout<<"RECEIPT GET DATE TEST ENDED."<<endl;
 }
 
-void unit_Receipt_setDate(){
+void unit_Receipt_setDate()
+{
     cout<<"RECEIPT SET DATE TEST STARTING..."<<endl;
 
     Receipt *r = new ReceiptImpl();
@@ -53,7 +57,8 @@ void unit_Receipt_setDate(){
     cout<<"RECEIPT SET DATE TEST ENDED..."<<endl;
 }   
 
-void unit_Receipt_getInitialValue(){
+void unit_Receipt_getInitialValue()
+{
     cout<<"RECEIPT GET INITIAL VALUE TEST STARTING..."<<endl;
 
     Receipt *r = new ReceiptImpl("23/07/2000", 1.1, 2.1);
@@ -65,7 +70,8 @@ void unit_Receipt_getInitialValue(){
     cout<<"RECEIPT GET INITIAL VALUE TEST ENDED."<<endl;
 }
 
-void unit_Receipt_setInitialValue(){
+void unit_Receipt_setInitialValue()
+{
     cout<<"RECEIPT SET INITIAL VALUE TEST STARTING..."<<endl;
 
     Receipt *r = new ReceiptImpl();
@@ -81,7 +87,8 @@ void unit_Receipt_setInitialValue(){
     cout<<"RECEIPT SET INITIAL VALUE TEST ENDED..."<<endl;
 }   
 
-void unit_Receipt_getFinalValue(){
+void unit_Receipt_getFinalValue()
+{
     cout<<"RECEIPT GET FINAL VALUE TEST STARTING..."<<endl;
 
     Receipt *r = new ReceiptImpl("23/07/2000", 1.1, 2.1);
@@ -93,7 +100,8 @@ void unit_Receipt_getFinalValue(){
     cout<<"RECEIPT GET FINAL VALUE TEST ENDED."<<endl;
 }
 
-void unit_Receipt_setFinalValue(){
+void unit_Receipt_setFinalValue()
+{
     cout<<"RECEIPT SET FINAL VALUE TEST STARTING..."<<endl;
 
     Receipt *r = new ReceiptImpl();
