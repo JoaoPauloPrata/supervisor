@@ -4,10 +4,10 @@
 
 #ifndef RECEIPT_H
 #define RECEIPT_H
-
+/// @cond
 #include <string>
 #include <list>
-
+/// @endcond
 #include "./purchase.h"
 
 /**

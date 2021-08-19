@@ -4,9 +4,9 @@
 
 #ifndef APP_H
 #define APP_H
-
+/// @cond
 #include <list>
-
+/// @endcond
 #include "./user.h"
 #include "./receipt.h"
 
@@ -31,10 +31,30 @@ public:
   int login(std::string u, std::string p);
 
   /**
-   * @brief addUser
-   * @param u User that will be added to the app.
+   * @brief Factory method to create users
+   * @param u username
+   * @param p password
+   * @return nothing to return
    */
-  void addUser(User *u);
+  void createUser(std::string u, std::string p);
+
+  /**
+   * @brief Factory method to create items
+   * @param id unique id
+   * @param name item's name
+   * @param price price in R$
+   * @return reference to created item
+   */
+  Item* createItem(std::string id, std::string name, float price);
+
+  /**
+   * @brief Factory method to create purchase
+   * @param quantity quantity of items bought
+   * @param time time of purchase hh:mm
+   * @param i item bought
+   * @return reference to created purchase
+   */
+  Purchase* createPurchase(int quantity, std::string time, Item *i);
 
   /**
    * @brief addToReceipt
@@ -64,6 +84,12 @@ private:
   void operator=(App const &);
 
   /**
+   * @brief addUser
+   * @param u User that will be added to the app.
+   */
+  void addUser(User *u);
+
+  /**
    * @brief user_list
    */
   std::list<User *> user_list;
@@ -78,7 +104,7 @@ private:
 *
 * \section Introdução
 *
-* Desenvolvimento de um Framework C++ para a Construção de Simulações Baseadas na Dinâmica de Sistemas.
+* Desenvolvimento de um Framework C++.
 *
 * É um software para Desktops que permita gerenciar um caixa de um comércio juntamente das vendas realizadas.
 * É esperado que o software permita o cadastro e manipulação dos itens que são vendidos no comércio,

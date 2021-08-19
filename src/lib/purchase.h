@@ -4,9 +4,9 @@
 
 #ifndef PURCHASE_H
 #define PURCHASE_H
-
+/// @cond
 #include <string>
-
+/// @endcond
 #include "./item.h"
 
 /**

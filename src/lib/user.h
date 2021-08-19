@@ -4,9 +4,9 @@
 
 #ifndef USER_H
 #define USER_H
-
+/// @cond
 #include <string>
-
+/// @endcond
 /**
  * @brief The User class
  */

@@ -22,10 +22,9 @@ void AddPurchasedItem::on_pushButton_confirm_clicked()
     int quantity = ui->spinBox_quantity->value();
     QString time = ui->lineEdit_time->text();
 
-    Item *i = new ItemImpl("1", name.toStdString(), price);
+    Item *i = App::getInstance().createItem("1", name.toStdString(), price);
+    Purchase *p = App::getInstance().createPurchase(i, quantity, time.toStdString());
 
-    Purchase *p = new PurchaseImpl(i, quantity, time.toStdString());
-
-    // App::getInstance().addToReceipt(p);
+    App::getInstance().addToReceipt(p);
 }
 

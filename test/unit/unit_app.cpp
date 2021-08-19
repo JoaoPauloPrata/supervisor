@@ -15,17 +15,16 @@ void unit_App_getInstance()
   cout << "APP GET INSTANCE TEST ENDED." << endl;
 };
 
-void unit_App_addUser()
+void unit_App_createUser()
 {
-  cout << "APP ADD USER TEST STARTING..." << endl;
+  cout << "APP CREATE USER TEST STARTING..." << endl;
 
-  // TEST 1 - ADDING USER
+  // TEST 1 - CREATING USER
   App &a = App::getInstance();
 
-  User *user = new UserImpl("use", "pas");
-  a.addUser(user);
+  a.createUser("use", "pas");
 
-  cout << "APP ADD USER TEST ENDED." << endl;
+  cout << "APP CREATE USER TEST ENDED." << endl;
 };
 
 void unit_App_login()
@@ -47,6 +46,6 @@ void unit_App_login()
 void run_unit_tests_App()
 {
   unit_App_getInstance();
-  unit_App_addUser();
+  unit_App_createUser();
   unit_App_login();
 };

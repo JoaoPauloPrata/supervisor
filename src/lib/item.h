@@ -4,9 +4,9 @@
 
 #ifndef ITEM_H
 #define ITEM_H
-
+/// @cond
 #include <string>
-
+/// @endcond
 /**
  * @brief The Item class
  */
