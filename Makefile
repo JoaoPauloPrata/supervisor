@@ -1,5 +1,6 @@
 api:
-	g++ -shared ./src/app.cpp ./src/item.cpp ./src/itemimpl.cpp ./src/purchaseimpl.cpp ./src/receiptimpl.cpp ./src/userimpl.cpp -o ./bin/libapi.so -L./bin -fpic -Wl,-rpath,bin
+	g++ -shared ./src/app.cpp ./src/item.cpp ./src/itemimpl.cpp ./src/purchaseimpl.cpp \
+	 ./src/receiptimpl.cpp ./src/userimpl.cpp -o ./bin/libapi.so -L./bin -fpic -Wl,-rpath,bin
 
 tests: test_func test_unit
 
