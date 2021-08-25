@@ -6,6 +6,7 @@
 #include "./unit_receipt.h"
 #include "./unit_item.h"
 #include "./unit_purchase.h"
+
 int main()
 {
   run_unit_tests_Purchase();
