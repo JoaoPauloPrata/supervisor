@@ -3,6 +3,8 @@
 
 #include "./functional_tests.h"
 
+#include <iostream>
+
 int main()
 {
   run_functional_tests();
