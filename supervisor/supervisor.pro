@@ -17,6 +17,11 @@ SOURCES += \
     mainwindow.cpp \
     receiptpage.cpp \
     report.cpp \
+    ..\src\app.cpp \
+    ..\src\userimpl.cpp \
+    ..\src\itemimpl.cpp \
+    ..\src\purchaseimpl.cpp \
+    ..\src\receiptimpl.cpp
 
 HEADERS += \
     actionreceipt.h \
@@ -26,6 +31,11 @@ HEADERS += \
     mainwindow.h \
     receiptpage.h \
     report.h \
+    ..\src\lib\app.h \
+    ..\src\lib\user.h \
+    ..\src\lib\item.h \
+    ..\src\lib\purchase.h \
+    ..\src\lib\receipt.h
 
 FORMS += \
     actionreceipt.ui \

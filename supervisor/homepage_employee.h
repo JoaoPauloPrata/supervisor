@@ -6,8 +6,9 @@
 
 #include <QDialog>
 
+#include "../src/lib/app.h"
 #include "actionreceipt.h"
-// #include "receiptpage.h"
+#include "receiptpage.h"
 #include "report.h"
 
 namespace Ui {

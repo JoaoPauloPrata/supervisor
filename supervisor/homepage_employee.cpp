@@ -26,6 +26,7 @@ void HomePage_Employee::on_pushButton_notas_fiscais_clicked()
 
 void HomePage_Employee::on_pushButton_gerar_relatorio_clicked()
 {
+    App::getInstance().report();
     Report *dialog = new Report(this);
     // hide();
     dialog->show();

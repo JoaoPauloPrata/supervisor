@@ -7,10 +7,13 @@ void functional_first_test() {
 
     App &a = App::getInstance();
 
-    Item *i = a.createItem("1", "name", 20.4);
+    Item *i = a.createItem("1", "name", 10.1);
     Purchase *p = a.createPurchase(2, "time", i);
 
-    // a.addToReceipt(p);
+    Item *i2 = a.createItem("2", "name2", 20.2);
+    Purchase *p2 = a.createPurchase(4, "time2", i2);
+
+    a.report();
 
     cout << "TESTE FUNCIONAL FINALIZADO" << endl;
 };

@@ -6,6 +6,7 @@
 #define APP_H
 /// @cond
 #include <list>
+#include <map>
 /// @endcond
 #include "./user.h"
 #include "./receipt.h"
@@ -57,10 +58,23 @@ public:
   Purchase* createPurchase(int quantity, std::string time, Item *i);
 
   /**
-   * @brief addToReceipt
-   * @param p
+   * @brief Generate report
+   * @return nothing to return
    */
-  void addToReceipt(Purchase *p);
+  void report();
+
+  /**
+   * @brief List to delete item
+   * @return list of purchased items
+   */
+  std::map<std::string, std::string> deleteFromReceiptList();
+
+  void deletePurchase(std::string);
+
+  /**
+   * @brief receipt_list
+   */
+  Receipt *receipt;
 
 private:
   /**
@@ -93,11 +107,6 @@ private:
    * @brief user_list
    */
   std::list<User *> user_list;
-
-  /**
-   * @brief receipt_list
-   */
-  Receipt *receipt;
 };
 
 /*! \mainpage Trabalho de Engenharia de Software

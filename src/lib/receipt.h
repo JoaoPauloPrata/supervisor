@@ -7,6 +7,8 @@
 /// @cond
 #include <string>
 #include <list>
+#include <map>
+#include <iostream>
 /// @endcond
 #include "./purchase.h"
 
@@ -62,6 +64,16 @@ public:
    * @param s
    */
   virtual void add(Purchase *p) = 0;
+
+  /**
+   * @brief generate report on purchases
+   * @return
+   */
+  virtual void report() = 0;
+
+  virtual std::map<std::string, std::string> deleteFromReceiptList() = 0;
+
+  virtual void deletePurchase(std::string) = 0;
 };
 
 #endif // RECEIPT_H

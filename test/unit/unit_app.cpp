@@ -1,4 +1,5 @@
 #include "./unit_app.h"
+#include "../../src/purchaseimpl.h"
 
 using namespace std;
 
@@ -43,9 +44,21 @@ void unit_App_login()
   cout << "APP LOGIN TEST ENDED." << endl;
 };
 
+void unit_App_addToReceipt() {
+  cout << "APP ADD TO RECEIPT TEST STARTING..." << endl;
+
+  // TEST 1 - ADDING
+  App &a = App::getInstance();
+  Item *i = a.createItem("1", "name", 20.4);
+  Purchase *p = a.createPurchase(2, "time", i);
+
+  cout << "APP ADD TO RECEIPT TEST ENDED." << endl;
+}
+
 void run_unit_tests_App()
 {
   unit_App_getInstance();
   unit_App_createUser();
   unit_App_login();
+  unit_App_addToReceipt();
 };

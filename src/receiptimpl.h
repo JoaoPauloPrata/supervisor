@@ -94,6 +94,16 @@ public:
    * @param s
    */
   virtual void add(Purchase *p);
+
+  /**
+   * @brief generate report on purchases
+   * @return
+   */
+  virtual void report();
+
+  virtual std::map<std::string, std::string> deleteFromReceiptList();
+
+  virtual void deletePurchase(std::string);
 };
 
 #endif // RECEIPTIMPL_H

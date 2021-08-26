@@ -2,10 +2,12 @@
 #include "./userimpl.h"
 #include "./itemimpl.h"
 #include "./purchaseimpl.h"
+#include "./receiptimpl.h"
 
 App::App()
 {
   this->createUser("admin", "admin");
+  receipt = new ReceiptImpl();
 };
 
 App &App::getInstance()
@@ -39,11 +41,6 @@ void App::createUser(std::string u, std::string p)
   addUser(user);
 };
 
-void App::addToReceipt(Purchase *p)
-{
-  receipt->add(p);
-};
-
 Item* App::createItem(std::string id, std::string name, float price)
 {
   Item *item = new ItemImpl(id, name, price);
@@ -53,5 +50,18 @@ Item* App::createItem(std::string id, std::string name, float price)
 Purchase* App::createPurchase(int quantity, std::string time, Item *i)
 {
   Purchase *pur = new PurchaseImpl(i, quantity, time);
+  receipt->add(pur);
   return pur;
+}
+
+void App::report() {
+  receipt->report();
+}
+
+std::map<std::string, std::string> App::deleteFromReceiptList() {
+  return receipt->deleteFromReceiptList();
+}
+
+void App::deletePurchase(std::string s) {
+  receipt->deletePurchase(s);
 }

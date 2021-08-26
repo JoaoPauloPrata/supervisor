@@ -6,7 +6,6 @@
 
 #include <QMainWindow>
 
-// #include "app.h"
 #include "../src/lib/app.h"
 #include "homepage_employee.h"
 

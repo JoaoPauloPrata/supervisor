@@ -25,7 +25,7 @@
    <property name="title">
     <string>Receipt</string>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -43,7 +43,7 @@
       </widget>
      </item>
      <item>
-      <widget class="QListView" name="listView_purchased_items"/>
+      <widget class="QListWidget" name="listWidget"/>
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_confirm">
