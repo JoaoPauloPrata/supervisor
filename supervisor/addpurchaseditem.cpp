@@ -1,8 +1,6 @@
 #include "addpurchaseditem.h"
 #include "ui_addpurchaseditem.h"
 
-#include "itemimpl.h"
-
 AddPurchasedItem::AddPurchasedItem(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::AddPurchasedItem)
@@ -23,8 +21,8 @@ void AddPurchasedItem::on_pushButton_confirm_clicked()
     QString time = ui->lineEdit_time->text();
 
     Item *i = App::getInstance().createItem("1", name.toStdString(), price);
-    Purchase *p = App::getInstance().createPurchase(i, quantity, time.toStdString());
+    Purchase *p = App::getInstance().createPurchase(quantity, time.toStdString(), i);
 
-    App::getInstance().addToReceipt(p);
+    close();
 }
 

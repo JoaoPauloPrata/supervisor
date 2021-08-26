@@ -14,7 +14,7 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QListView>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -25,10 +25,10 @@ class Ui_DeletePurchasedItem
 {
 public:
     QGroupBox *groupBox;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout;
     QLabel *label_pick_item;
-    QListView *listView_purchased_items;
+    QListWidget *listWidget;
     QPushButton *pushButton_confirm;
 
     void setupUi(QDialog *DeletePurchasedItem)
@@ -39,23 +39,23 @@ public:
         groupBox = new QGroupBox(DeletePurchasedItem);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
         groupBox->setGeometry(QRect(130, 70, 351, 321));
-        widget = new QWidget(groupBox);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(50, 50, 258, 240));
-        verticalLayout = new QVBoxLayout(widget);
+        layoutWidget = new QWidget(groupBox);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(50, 50, 258, 240));
+        verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
-        label_pick_item = new QLabel(widget);
+        label_pick_item = new QLabel(layoutWidget);
         label_pick_item->setObjectName(QString::fromUtf8("label_pick_item"));
 
         verticalLayout->addWidget(label_pick_item);
 
-        listView_purchased_items = new QListView(widget);
-        listView_purchased_items->setObjectName(QString::fromUtf8("listView_purchased_items"));
+        listWidget = new QListWidget(layoutWidget);
+        listWidget->setObjectName(QString::fromUtf8("listWidget"));
 
-        verticalLayout->addWidget(listView_purchased_items);
+        verticalLayout->addWidget(listWidget);
 
-        pushButton_confirm = new QPushButton(widget);
+        pushButton_confirm = new QPushButton(layoutWidget);
         pushButton_confirm->setObjectName(QString::fromUtf8("pushButton_confirm"));
 
         verticalLayout->addWidget(pushButton_confirm);

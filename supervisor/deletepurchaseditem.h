@@ -5,6 +5,9 @@
 #define DELETEPURCHASEDITEM_H
 
 #include <QDialog>
+#include <QListWidgetItem>
+#include <map>
+#include "../src/lib/app.h"
 
 namespace Ui {
 class DeletePurchasedItem;
@@ -17,6 +20,9 @@ class DeletePurchasedItem : public QDialog
 public:
     explicit DeletePurchasedItem(QWidget *parent = nullptr);
     ~DeletePurchasedItem();
+
+private slots:
+    void on_pushButton_confirm_clicked();
 
 private:
     Ui::DeletePurchasedItem *ui;

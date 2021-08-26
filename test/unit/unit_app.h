@@ -16,5 +16,6 @@ void run_unit_tests_App();
 void unit_App_getInstance();
 void unit_App_createUser();
 void unit_App_login();
+void unit_App_addToReceipt();
 
 #endif

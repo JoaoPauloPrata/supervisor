@@ -6,6 +6,11 @@ release/main.o
 release/mainwindow.o
 release/receiptpage.o
 release/report.o
+release/app.o
+release/userimpl.o
+release/itemimpl.o
+release/purchaseimpl.o
+release/receiptimpl.o
 release/moc_actionreceipt.o
 release/moc_addpurchaseditem.o
 release/moc_deletepurchaseditem.o
